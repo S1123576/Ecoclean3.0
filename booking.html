@@ -1,13 +1,11 @@
+about.html
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoClean - 我的預約</title>
+    <title>關於我們 - EcoClean</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAksbXFNLVm_hsTkDTVpLROnH6ppnYCzOM
-" defer></script>
-    <script src="maps.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,28 +16,85 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" data-lang="首頁">首頁</a></li>
-                    <li><a href="about.html" data-lang="關於我們">關於我們</a></li>
-                    <li><a href="booking.html" data-lang="我的預約">我的預約</a></li>
-                    <li><a href="schedule.html" data-lang="立即預約">立即預約</a></li>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="booking.html">我的預約</a></li>
+                    <li><a href="schedule.html">立即預約</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="content-section">
-            <h2 data-lang="我的預約">我的預約</h2>
-            <div id="booking-details">
-                <!-- JS 動態插入預約內容 -->
+         <!-- 關於我們區塊 -->
+        <section class="about-section">
+            <div class="about-container">
+                <!-- 左邊圖片 -->
+                <div class="about-image">
+                    <img src="images/about-us.png" alt="關於我們" />
+                </div>
+                <!-- 右邊內容 -->
+                <div class="about-content">
+            <h1>關於我們</h1>
+            <p>我們提供最優質的到府垃圾收運服務，讓您的生活更簡單。</p>
+            <p>擁有靈活的服務時間，專為行動不便者以及忙碌的你設計</p>
+            <p>主打在家只要打開手機就能輕鬆處理掉您家中的垃圾～！</p>
+        </section>
+
+        <!-- 新增價目表區塊 -->
+        <section class="pricing-section">
+            <h2>服務價目表</h2>
+            <p>提供透明且合理的收費標準。</p>
+            <div class="pricing-cards">
+                <div class="card">
+                    <img src="images/basic-service.png" alt="基本服務">
+                    <h3>基本服務(中小型垃圾）</h3>
+                    <p>NT$200</p>
+                    <button>選擇</button>
+                    <p>包含基本垃圾一次性收運服務。</p>
+                </div>
+                <div class="card recommended">
+                    <img src="images/standard-service.png" alt="標準服務">
+                    <h3>大件垃圾服務</h3>
+                    <p>NT$300</p>
+                    <button>選擇</button>
+                    <p>提供大件垃圾一次性收運服務。</p>
+                </div>
+                <div class="card">
+                    <img src="images/premium-service.png" alt="高級服務">
+                    <h3>包月服務</h3>
+                    <p>NT$5000</p>
+                    <button>選擇</button>
+                    <p>30天內無限次到府收垃圾服務。</p>
+                </div>
             </div>
-            <div id="map" style="height: 500px;"></div>
+        </section>
+
+        <!-- 新增收運流程區塊 -->
+        <section class="process-section">
+            <h2>收運流程</h2>
+            <p>我們的服務流程簡單高效，讓您輕鬆解決垃圾問題。</p>
+            <ol class="process-steps">
+                <li>
+                    <img src="images/step1.png" alt="步驟1">
+                    <h3>步驟1</h3>
+                    <p>在線預約並選擇適合您的服務。</p>
+                </li>
+                <li>
+                    <img src="images/step2.png" alt="步驟2">
+                    <h3>步驟2</h3>
+                    <p>我們的專業團隊到府收運垃圾。</p>
+                </li>
+                <li>
+                    <img src="images/step3.png" alt="步驟3">
+                    <h3>步驟3</h3>
+                    <p>垃圾被妥善處理，您可檢視服務記錄。</p>
+                </li>
+            </ol>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 EcoClean</p>
-    </footer>
+   
 </body>
 </html>
 
