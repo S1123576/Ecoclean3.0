@@ -25,22 +25,21 @@
 
     <section class="content-section">
         <h2 data-lang="我的預約">我的預約</h2>
-
-        <!-- 預約內容顯示區域 -->
+ <!-- 預約內容顯示區域 -->
         <div id="appointment-details">
             <h3>預約資訊</h3>
             <p><strong>預約時間：</strong>2025-01-09 09:00 AM</p>
             <p><strong>預約地址：</strong>台北市信義區光復南路</p>
             <p><strong>聯絡電話：</strong>0912345678</p>
-        </div>
-
-        <!-- 地圖顯示區域 -->
-        <div id="map" style="height: 500px;"></div>
-
-        <!-- 即時路線顯示區域 -->
-        <p data-lang="垃圾車的即時路線">垃圾車的即時路線</p>
-        <div id="route-map" style="height: 300px;"></div>
-    </section>
+        </div>   
+         <!-- 即時垃圾車追蹤 -->
+        <section id="tracking" class="tracking-section">
+            <h2 id="tracking-title">即時追蹤垃圾車</h2>
+            <p id="tracking-description">查看垃圾車的即時位置，讓您準備好交接垃圾。</p>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <button id="update-location" class="hero-btn">模擬更新垃圾車位置</button>
+        </section>
+        
 </body>
 </html>
 
