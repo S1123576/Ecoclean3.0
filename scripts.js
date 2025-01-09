@@ -47,3 +47,7 @@ document.getElementById("update-location").addEventListener("click", () => {
 
 // 在頁面加載時初始化地圖
 window.onload = initMap;
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('我們已收到您的預約，請至我的預約查看');
+});
