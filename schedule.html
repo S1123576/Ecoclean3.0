@@ -1,64 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoClean - 立即預約</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>預約收垃圾 - EcoClean</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img src="logo.png" alt="EcoClean Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="booking.html">我的預約</a></li>
-                    <li><a href="schedule.html">立即預約</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="container">
+    <div class="form-card">
+      <h1>預約收垃圾 / Book a Waste Pickup</h1>
+      <form action="#" method="post">
+        <label for="name">姓名 / Name:</label>
+        <input type="text" id="name" name="name" placeholder="輸入您的姓名">
 
-    <section class="content-section">
-        <h2>立即預約</h2>
-        <form id="booking-form">
-            <label for="name">姓名</label>
-            <input type="text" id="name" name="name" required>
+        <label for="phone">聯絡電話 / Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="輸入聯絡電話">
 
-            <label for="phone">聯絡電話</label>
-            <input type="tel" id="phone" name="phone" required>
+        <label for="address">地址 / Address:</label>
+        <input type="text" id="address" name="address" placeholder="輸入地址">
 
-            <label for="email">電子信箱</label>
-            <input type="email" id="email" name="email" required>
+        <label for="date">預約日期 / Date:</label>
+        <input type="date" id="date" name="date">
 
-            <label for="address">地址</label>
-            <input type="text" id="address" name="address" required>
+        <label for="volume">垃圾體積 / Waste Volume:</label>
+        <select id="volume" name="volume">
+          <option value="small">小型 / Small</option>
+          <option value="medium">中型 / Medium</option>
+          <option value="large">大型 / Large</option>
+        </select>
 
-            <label for="date">預約日期</label>
-            <input type="date" id="date" name="date" required>
+        <label for="type">垃圾種類 / Waste Type:</label>
+        <select id="type" name="type">
+          <option value="recyclable">可回收 / Recyclable</option>
+          <option value="non-recyclable">不可回收 / Non-Recyclable</option>
+        </select>
 
-            <label for="size">垃圾體積</label>
-            <select id="size" name="size">
-                <option value="small">小型</option>
-                <option value="medium">中型</option>
-                <option value="large">大型</option>
-                <option value="extra-large">超大型</option>
-            </select>
-
-            <label for="type">垃圾種類</label>
-            <select id="type" name="type">
-                <option value="recyclable">可回收</option>
-                <option value="non-recyclable">不可回收</option>
-                <option value="organic">廚餘</option>
-            </select>
-
-            <button type="submit">送出</button>
-        </form>
-    </section>
-
-    
+        <button type="submit">送出預約 / Submit Booking</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
