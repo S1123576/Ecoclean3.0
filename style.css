@@ -1,55 +1,62 @@
+/* 全局樣式 */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e8f0e8;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F4F1; /* 淺綠灰背景 */
+    color: #4F6D5A; /* 深綠文字 */
+}
+form {
+    text-align: left;
+    margin: auto;
+    max-width: 500px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+form label {
+    font-weight: bold;
+    color: #4F6D5A;
 }
 
-.form-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 400px;
-  width: 100%;
+form input, form select, form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #4F6D5A;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
 }
 
-h1 {
-  text-align: center;
-  color: #2c5d3f;
-  font-size: 24px;
+form button {
+    background-color: #4F6D5A;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-label {
-  display: block;
-  margin-top: 10px;
-  color: #2c5d3f;
-  font-weight: bold;
+form button:hover {
+    background-color: #A3B8A3;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-input, select, button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
+.buttons button {
+    background-color: #4F6D5A;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-button {
-  background-color: #2c5d3f;
-  color: #ffffff;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #244c34;
+.buttons button:hover {
+    background-color: #A3B8A3;
 }
