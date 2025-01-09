@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar img.logo {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.content-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+/* 簡化呈現 */
+
+#map {
+    margin: 20px auto;
+    max-width: 90%;
+    border: 1px solid #ccc;
+}
+button {
+    margin: 5px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+button:hover {
+    background: #555;
+}
