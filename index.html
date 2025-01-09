@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoClean - 首頁</title>
+    <title>EcoClean - 到府收垃圾服務</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <img src="logo.png" alt="EcoClean Logo" class="logo">
+            <!-- LOGO 區域 -->
+            <div class="logo-container">
+                <img src="images/logo.png" alt="EcoClean Logo" class="logo">
+                <span class="platform-name">到府收垃圾平台</span>
+            </div>
+            <!-- 導航區域 -->
             <nav>
                 <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="booking.html">我的預約</a></li>
-                    <li><a href="schedule.html">立即預約</a></li>
+                    <li><a href="index.html" data-lang="首頁">首頁</a></li>
+                    <li><a href="about.html" data-lang="關於我們">關於我們</a></li>
+                    <li><a href="booking.html" data-lang="我的預約">我的預約</a></li>
+                    <li><a href="schedule.html" data-lang="立即預約">立即預約</a></li>
                 </ul>
             </nav>
+            <button id="language-toggle">EN</button>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>到府收垃圾服務</h1>
-            <button class="btn" onclick="scrollToSection('innovative')">了解更多</button>
-        </div>
-    </section>
-
     <section id="innovative" class="content-section">
-        <h2>內容創新的清運方式</h2>
-        <p>讓垃圾清運變得簡單無比</p>
+        <h2 data-lang="內容創新的清運方式">內容創新的清運方式</h2>
+        <p data-lang="讓垃圾清運變得簡單無比">讓垃圾清運變得簡單無比</p>
         <div class="features">
             <div>
-                <img src="flexible-schedule.png" alt="靈活預約">
-                <h3>靈活的預約時間</h3>
+                <img src="images/flexible-schedule.png" alt="靈活預約">
+                <h3 data-lang="靈活的預約時間">靈活的預約時間</h3>
             </div>
             <div>
-                <img src="professional-team.png" alt="專業團隊">
-                <h3>專業的服務團隊</h3>
+                <img src="images/professional-team.png" alt="專業團隊">
+                <h3 data-lang="專業的服務團隊">專業的服務團隊</h3>
             </div>
             <div>
-                <img src="online-process.png" alt="簡單操作">
-                <h3>簡單的在線操作</h3>
+                <img src="images/online-process.png" alt="簡單操作">
+                <h3 data-lang="簡單的在線操作">簡單的在線操作</h3>
             </div>
         </div>
     </section>
@@ -80,8 +79,6 @@
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 EcoClean | 到府收垃圾服務</p>
-    </footer>
+   
 </body>
 </html>
