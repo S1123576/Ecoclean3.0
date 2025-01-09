@@ -65,4 +65,57 @@ button {
 button:hover {
     background: #555;
 }
+/* LOGO 和平台名稱 */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.platform-name {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 調整導航區域 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#language-toggle {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#language-toggle:hover {
+    background: #fff;
+    color: #333;
+}
+
 
