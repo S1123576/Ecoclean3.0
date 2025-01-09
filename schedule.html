@@ -10,28 +10,28 @@
   <div class="container">
     <div class="form-card">
       <h1>預約收垃圾 / Book a Waste Pickup</h1>
-      <form action="#" method="post">
+      <form id="bookingForm">
         <label for="name">姓名 / Name:</label>
-        <input type="text" id="name" name="name" placeholder="輸入您的姓名">
+        <input type="text" id="name" name="name" placeholder="輸入您的姓名" required>
 
         <label for="phone">聯絡電話 / Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="輸入聯絡電話">
+        <input type="tel" id="phone" name="phone" placeholder="輸入聯絡電話" required>
 
         <label for="address">地址 / Address:</label>
-        <input type="text" id="address" name="address" placeholder="輸入地址">
+        <input type="text" id="address" name="address" placeholder="輸入地址" required>
 
         <label for="date">預約日期 / Date:</label>
-        <input type="date" id="date" name="date">
+        <input type="date" id="date" name="date" required>
 
         <label for="volume">垃圾體積 / Waste Volume:</label>
-        <select id="volume" name="volume">
+        <select id="volume" name="volume" required>
           <option value="small">小型 / Small</option>
           <option value="medium">中型 / Medium</option>
           <option value="large">大型 / Large</option>
         </select>
 
         <label for="type">垃圾種類 / Waste Type:</label>
-        <select id="type" name="type">
+        <select id="type" name="type" required>
           <option value="recyclable">可回收 / Recyclable</option>
           <option value="non-recyclable">不可回收 / Non-Recyclable</option>
         </select>
@@ -40,5 +40,6 @@
       </form>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
