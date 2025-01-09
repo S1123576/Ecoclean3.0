@@ -1,3 +1,7 @@
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('我們已收到您的預約，請至我的預約查看');
+});
 // 初始化地圖和垃圾車標記
 let map, garbageTruckMarker;
 
