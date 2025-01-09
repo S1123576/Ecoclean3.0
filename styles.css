@@ -1,67 +1,154 @@
+/* 基本設定 */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
-}
-
-.navbar {
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: auto;
+    justify-content: space-between;
 }
 
-.navbar img.logo {
+header .logo {
     height: 50px;
 }
 
-.navbar ul {
+header ul {
     list-style: none;
+    padding: 0;
     display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero 區域 */
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-overlay h1 {
+    font-size: 3em;
+    margin: 0 0 10px;
+}
+
+.hero-overlay p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
     gap: 15px;
 }
 
-.navbar a {
+.hero-button {
+    background: #00b050;
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
 }
 
-section.content-section {
-    padding: 2rem;
+.hero-button:hover {
+    background: #007a33;
+}
+
+.hero-button.secondary {
+    background: #fff;
+    color: #00b050;
+    border: 2px solid #00b050;
+}
+
+.hero-button.secondary:hover {
+    background: #00b050;
+    color: #fff;
+}
+
+/* 關於我們區域 */
+.about-section {
+    padding: 40px 20px;
     text-align: center;
+    background: #f9f9f9;
 }
 
-.features {
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.about-features {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-/* 簡化呈現 */
 
-#map {
-    margin: 20px auto;
-    max-width: 90%;
-    border: 1px solid #ccc;
+.feature {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
 }
-button {
-    margin: 5px;
+
+.feature img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.feature h3 {
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* 頁腳 */
+footer {
     background: #333;
     color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-button:hover {
-    background: #555;
+    text-align: center;
+    padding: 10px 20px;
 }
