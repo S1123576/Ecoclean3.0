@@ -1,47 +1,90 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoClean - 關於我們</title>
+    <title>關於我們 - EcoClean</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <img src="images/logo.png" alt="EcoClean Logo" class="logo">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="EcoClean Logo" class="logo">
+                <span class="platform-name">到府收垃圾平台</span>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" data-lang="首頁">首頁</a></li>
-                    <li><a href="about.html" data-lang="關於我們">關於我們</a></li>
-                    <li><a href="booking.html" data-lang="我的預約">我的預約</a></li>
-                    <li><a href="schedule.html" data-lang="立即預約">立即預約</a></li>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="booking.html">我的預約</a></li>
+                    <li><a href="schedule.html">立即預約</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="content-section">
-        <h2 data-lang="設計理念">設計理念</h2>
-        <p data-lang="便捷、安全、環保">便捷、安全、環保</p>
-        <div class="features">
-            <div>
-                <img src="images/flexible-service.png" alt="靈活服務">
-                <h3 data-lang="靈活的服務時間">靈活的服務時間</h3>
-            </div>
-            <div>
-                <img src="images/elder-friendly.png" alt="老年人服務">
-                <h3 data-lang="專為行動不便者設計">專為行動不便者設計</h3>
-            </div>
-            <div>
-                <img src="images/eco-treatment.png" alt="環保處理">
-                <h3 data-lang="環保的垃圾處理">環保的垃圾處理</h3>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="about-section">
+            <h1>關於我們</h1>
+            <p>我們提供最優質的到府垃圾收運服務，讓您的生活更簡單。</p>
+        </section>
 
-   
+        <!-- 新增價目表區塊 -->
+        <section class="pricing-section">
+            <h2>服務價目表</h2>
+            <p>提供透明且合理的收費標準。</p>
+            <div class="pricing-cards">
+                <div class="card">
+                    <img src="images/basic-service.png" alt="基本服務">
+                    <h3>基本服務(中小型垃圾）</h3>
+                    <p>NT$200.00</p>
+                    <button>選擇</button>
+                    <p>包含基本垃圾一次性收運服務。</p>
+                </div>
+                <div class="card recommended">
+                    <img src="images/standard-service.png" alt="標準服務">
+                    <h3>大件垃圾服務</h3>
+                    <p>NT$300.00</p>
+                    <button>選擇</button>
+                    <p>提供大件垃圾一次性收運服務。</p>
+                </div>
+                <div class="card">
+                    <img src="images/premium-service.png" alt="高級服務">
+                    <h3>包月服務</h3>
+                    <p>NT$5000</p>
+                    <button>選擇</button>
+                    <p>30天內無限次到府收垃圾服務。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新增收運流程區塊 -->
+        <section class="process-section">
+            <h2>收運流程</h2>
+            <p>我們的服務流程簡單高效，讓您輕鬆解決垃圾問題。</p>
+            <ol class="process-steps">
+                <li>
+                    <img src="images/step1.png" alt="步驟1">
+                    <h3>步驟1</h3>
+                    <p>在線預約並選擇適合您的服務。</p>
+                </li>
+                <li>
+                    <img src="images/step2.png" alt="步驟2">
+                    <h3>步驟2</h3>
+                    <p>我們的專業團隊到府收運垃圾。</p>
+                </li>
+                <li>
+                    <img src="images/step3.png" alt="步驟3">
+                    <h3>步驟3</h3>
+                    <p>垃圾被妥善處理，您可檢視服務記錄。</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 EcoClean | 到府收垃圾服務</p>
+    </footer>
 </body>
 </html>
-
