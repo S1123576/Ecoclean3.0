@@ -1,10 +1,33 @@
-/* 全局樣式 */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F2F4F1; /* 淺綠灰背景 */
+/* 各區塊樣式 */
+.section {
+    padding: 2rem;
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+    background: #E6EFE9; /* 柔和綠白背景 */
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 1.8rem;
     color: #4F6D5A; /* 深綠文字 */
+}
+
+.section p, .section ul {
+    font-size: 1rem;
+    color: #4F6D5A;
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin: 0.5rem 0;
 }
 form {
     text-align: left;
