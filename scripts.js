@@ -1,42 +1,72 @@
-// Google Maps API 初始化和設置
+// 初始化地圖和標記
+let map, garbageTruckMarker;
+
 function initMap() {
-    // 創建地圖的中心位置
-    const mapCenter = { lat: 25.038, lng: 121.5645 }; // 假設台北市信義區的座標
-    const mapOptions = {
-        zoom: 13,
-        center: mapCenter,
-    };
+    const initialPosition = { lat: 25.033964, lng: 121.564468 }; // 台北 101 位置
 
-    // 創建地圖物件
-    const map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    // 初始化地圖
+    map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: initialPosition,
+    });
 
-    // 假設垃圾車的即時位置
-    const garbageTruckLocation = { lat: 25.037, lng: 121.565 }; // 假設位置
-
-    // 標記垃圾車的位置
-    const marker = new google.maps.Marker({
-        position: garbageTruckLocation,
+    // 添加垃圾車標記
+    garbageTruckMarker = new google.maps.Marker({
+        position: initialPosition,
         map: map,
         title: "垃圾車位置",
+        icon: {
+            url: "https://maps.google.com/mapfiles/kml/shapes/truck.png",
+            scaledSize: new google.maps.Size(50, 50),
+        },
     });
-
-    // 模擬垃圾車即時路線，這是假的數據，你應該用API來獲取即時路線
-    const routeCoordinates = [
-        { lat: 25.037, lng: 121.565 },
-        { lat: 25.038, lng: 121.568 },
-        { lat: 25.039, lng: 121.570 },
-    ];
-
-    // 使用Polyline繪製即時路線折線圖
-    const routePath = new google.maps.Polyline({
-        path: routeCoordinates,
-        geodesic: true,
-        strokeColor: '#FF0000',
-        strokeOpacity: 1.0,
-        strokeWeight: 3,
-    });
-    routePath.setMap(map);
 }
 
-// 設定地圖初始化
-google.maps.event.addDomListener(window, 'load', initMap);
+// 模擬更新垃圾車位置
+document.getElementById("update-location").addEventListener("click", () => {
+    const newLat = garbageTruckMarker.getPosition().lat() + (Math.random() - 0.5) * 0.01;
+    const newLng = garbageTruckMarker.getPosition().lng() + (Math.random() - 0.5) * 0.01;
+
+    const newPosition = { lat: newLat, lng: newLng };
+    garbageTruckMarker.setPosition(newPosition);
+    map.setCenter(newPosition);
+});
+
+// 切換語言
+function switchLanguage(lang) {
+    const translations = {
+        zh: {
+            heroTitle: "到府收垃圾服務",
+            heroDescription: "輕鬆解決垃圾清運的煩惱，享受更便利的生活",
+            heroBtn: "立即預約",
+            servicesTitle: "我們的服務",
+            servicesDescription: "提供即時上門收垃圾服務，解決現代人因忙碌無法配合垃圾車時間的煩惱，特別適合長者及行動不便者。",
+            bookingBtn: "立即預約",
+            trackingTitle: "即時追蹤垃圾車",
+            trackingDescription: "查看垃圾車的即時位置，讓您準備好交接垃圾。",
+        },
+        en: {
+            heroTitle: "Door-to-Door Garbage Collection",
+            heroDescription: "Easily solve garbage disposal problems and enjoy a more convenient life.",
+            heroBtn: "Book Now",
+            servicesTitle: "Our Services",
+            servicesDescription: "We offer garbage collection services at your doorstep, perfect for busy people or those with mobility issues.",
+            bookingBtn: "Book Now",
+            trackingTitle: "Real-Time Garbage Truck Tracking",
+            trackingDescription: "Check the real-time location of the garbage truck and prepare for the handover.",
+        },
+    };
+
+    const content = translations[lang];
+    document.getElementById("hero-title").innerText = content.heroTitle;
+    document.getElementById("hero-description").innerText = content.heroDescription;
+    document.getElementById("hero-btn").innerText = content.heroBtn;
+    document.getElementById("services-title").innerText = content.servicesTitle;
+    document.getElementById("services-description").innerText = content.servicesDescription;
+    document.getElementById("booking-btn").innerText = content.bookingBtn;
+    document.getElementById("tracking-title").innerText = content.trackingTitle;
+    document.getElementById("tracking-description").innerText = content.trackingDescription;
+}
+
+// 初始化地圖
+window.onload = initMap;
