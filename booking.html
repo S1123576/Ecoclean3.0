@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoClean - 我的預約</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="booking.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+    <script src="maps.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,8 +25,8 @@
 
     <section class="content-section">
         <h2>我的預約</h2>
-        <div id="map"></div>
-        <p>顯示即時路線</p>
+        <div id="map" style="height: 500px;"></div>
+        <p>垃圾車的即時路線</p>
     </section>
 
     <footer>
@@ -33,3 +34,4 @@
     </footer>
 </body>
 </html>
+
