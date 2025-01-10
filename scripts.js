@@ -1,17 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll("[data-lang]");
-
-    // 切換語言的函數
-    function switchLanguage(lang) {
-        elements.forEach(el => {
-            el.textContent = lang === "zh" ? el.getAttribute("data-lang") : el.getAttribute("data-en");
-        });
-    }
-
-    // 綁定按鈕事件
-    document.getElementById("lang-zh").addEventListener("click", () => switchLanguage("zh"));
-    document.getElementById("lang-en").addEventListener("click", () => switchLanguage("en"));
-});
 document.getElementById('bookingForm').addEventListener('submit', function(event) {
   event.preventDefault();
   alert('我們已收到您的預約，請至我的預約查看');
