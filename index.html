@@ -5,57 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoClean - 到府收垃圾服務</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <!-- LOGO 區域 -->
             <div class="logo-container">
                 <img src="images/logo.png" alt="EcoClean Logo" class="logo">
-                <span class="platform-name">到府收垃圾平台</span>
+                <span class="platform-name" data-lang="到府收垃圾平台" data-en="EcoClean Platform">到府收垃圾平台</span>
             </div>
-            <!-- 導航區域 -->
             <nav>
                 <ul>
-                    <li><a href="index.html" data-lang="首頁">首頁</a></li>
-                    <li><a href="about.html" data-lang="關於我們">關於我們</a></li>
-                    <li><a href="booking.html" data-lang="我的預約">我的預約</a></li>
-                    <li><a href="schedule.html" data-lang="立即預約">立即預約</a></li>
+                    <li><a href="index.html" data-lang="首頁" data-en="Home">首頁</a></li>
+                    <li><a href="about.html" data-lang="關於我們" data-en="About Us">關於我們</a></li>
+                    <li><a href="booking.html" data-lang="我的預約" data-en="My Bookings">我的預約</a></li>
+                    <li><a href="schedule.html" data-lang="立即預約" data-en="Book Now">立即預約</a></li>
                 </ul>
             </nav>
+            <!-- 語言切換按鈕 -->
+            <div class="language-switch">
+                <button id="lang-zh" class="lang-btn">中文</button>
+                <button id="lang-en" class="lang-btn">English</button>
+            </div>
         </div>
     </header>
 
     <section id="innovative" class="content-section">
-        <h2 data-lang="內容創新的清運方式">內容創新的清運方式</h2>
-        <p data-lang="讓垃圾清運變得簡單無比">讓垃圾清運變得簡單無比</p>
+        <h2 data-lang="內容創新的清運方式" data-en="Innovative Garbage Collection">內容創新的清運方式</h2>
+        <p data-lang="讓垃圾清運變得簡單無比" data-en="Make garbage collection simple and easy.">讓垃圾清運變得簡單無比</p>
         <div class="features">
             <div>
                 <img src="images/flexible-schedule.png" alt="靈活預約">
-                <h3 data-lang="靈活的預約時間">靈活的預約時間</h3>
-                <p>現代人生活繁忙，因此我們提供居家到府</p>
-                <p>收垃圾服務，無需受限於垃圾車的固定時間。</p>
+                <h3 data-lang="靈活的預約時間" data-en="Flexible Scheduling">靈活的預約時間</h3>
+                <p data-lang="現代人生活繁忙，因此我們提供居家到府" data-en="Modern life is busy, so we offer home garbage pickup services.">現代人生活繁忙，因此我們提供居家到府</p>
+                <p data-lang="收垃圾服務，無需受限於垃圾車的固定時間。" data-en="No need to rely on fixed garbage truck schedules.">收垃圾服務，無需受限於垃圾車的固定時間。</p>
             </div>
             <div>
                 <img src="images/professional-team.png" alt="專業團隊">
-                <h3 data-lang="專業的服務團隊">專業的服務團隊</h3>
-            
-                <p>我們特別考慮到老年人和行動不便者的需求，</p>
-                <p>讓每位客戶都能輕鬆倒垃圾，消除不便之處。</p>
+                <h3 data-lang="專業的服務團隊" data-en="Professional Team">專業的服務團隊</h3>
+                <p data-lang="我們特別考慮到老年人和行動不便者的需求，" data-en="We specially consider the needs of the elderly and disabled.">我們特別考慮到老年人和行動不便者的需求，</p>
+                <p data-lang="讓每位客戶都能輕鬆倒垃圾，消除不便之處。" data-en="Allowing every customer to dispose of garbage easily.">讓每位客戶都能輕鬆倒垃圾，消除不便之處。</p>
             </div>
             <div>
                 <img src="images/online-process.png" alt="簡單操作">
-                <h3 data-lang="簡單的在線操作">簡單的在線操作</h3>
-                <p>我們採用環保的垃圾處理方式，確保垃圾</p>
-                <p>能夠妥善的處理，為保護地球出一份力。</p>
+                <h3 data-lang="簡單的在線操作" data-en="Easy Online Operation">簡單的在線操作</h3>
+                <p data-lang="我們採用環保的垃圾處理方式，確保垃圾" data-en="We adopt eco-friendly garbage disposal methods to ensure waste is properly handled.">我們採用環保的垃圾處理方式，確保垃圾</p>
+                <p data-lang="能夠妥善的處理，為保護地球出一份力。" data-en="Contributing to protecting the planet.">能夠妥善的處理，為保護地球出一份力。</p>
             </div>
         </div>
     </section>
-
- 
-
-    
-
-   
 </body>
 </html>
